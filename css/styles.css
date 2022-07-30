@@ -1,0 +1,159 @@
+:root {
+  --accent-background-color: #4a2b33;
+  --accent-text-color: #d27487;
+  --text-color: #222222;
+
+  --secondary-font: "Azeret Mono", monospace;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+/* Common geometry reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+
+/* Components */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ===================HEADER=================== */
+
+.header {
+  background-color: var(--accent-background-color);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu-link {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--accent-text-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo-link {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.social-networks-list {
+  display: flex;
+}
+
+.social-networks-item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.social-networks-link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ===================HERO=================== */
+.hero-section {
+  background-color: var(--accent-background-color);
+  padding-bottom: 36px;
+}
+
+.hero-container {
+  width: 1328px;
+  height: 644px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(../images/hero/latte-cafe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ABOUT */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 220px;
+  padding-bottom: 224px;
+}
+
+.about-title {
+  margin-bottom: 3px;
+
+  font-family: var(--secondary-font);
+  font-size: 17px;
+  line-height: 1.27;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.about-text {
+  width: 900px;
+  font-size: 32px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--text-color);
+}
